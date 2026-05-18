@@ -70,9 +70,5 @@ Me chamo Joaquim, tenho 22 anos e estou em transição de carreira para a área 
 
 Você pode falar comigo diretamente preenchendo o formulário no rodapé do portfólio ou utilizando o redirecionamento dinâmico.
 
-* **E-mail:** [Seu Email Aqui, se quiser adicionar]
-* **LinkedIn:** [Seu Link de LinkedIn Aqui]
-* **WhatsApp de Teste do Projeto:** [Link do seu Portfólio rodando]
-
 ---
 <p align="center">Desenvolvido com 💜 por Joaquim Muriel — 2026</p>

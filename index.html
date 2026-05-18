@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio | Joaquimuriel</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<header class="cabecalho">
+    <nav>
+        <ul class="cabecalho-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+</div>
+
+<body>
+    <section Class="perfil">
+        <div>
+            <img src="photos/foto para instagram.jpeg" alt="Foto de perfil" Class="perfil-foto">
+            <h1 Class="perfil-nome">Joaquim Muriel de Almeida</h1>
+            <p Class="perfil-text">Desenvolvedor C#</p>
+        </div>
+    </section>
+
+    <section Class="sobre" id="sobre">
+        <h2 Class="sobre-titulo">Sobre mim</h2>
+        <p Class="sobre-text">Me chamo Joaquim tenho 22 anos estou em transição de carreira para a tecnologia,
+            unindo
+            experiência em atendimento ao cliente com competências em desenvolvimento e design. Atualmente cursando
+            Análise e Desenvolvimento de Sistemas com previsão de termino em 2028, já possuindo um conhecimento em
+            na
+            linguagem C#( nivel Júnior), marketing(junior), design gráfico e digital(Photoshop e CorelDraw)
+            aplicando a
+            E-commerce e redes sociais.</p>
+    </section>
+
+    <section Class="projetos" id="projetos">
+        <div Class="projetos-box">
+            <a href="https://tally.so/r/ja9X6R" class="linkImage"><img src="photos/gerador-de-conteudo.png"
+                    alt="Foto da landpage do projeto" class="projetos-imagem"></a>
+            <p class="projetos-text">Automatização de conteúdo e agendamento de postagem</p>
+        </div>
+
+        <div Class="projetos-box">
+            <a href="https://github.com/Joaquimuriel/Edital_de_tarefas" class="linkImage"><img
+                    src="photos/gestor-tarefas-avalonia.png" alt="Foto do projeto" class="projetos-imagem"></a>
+            <p class="projetos-text">Aplicativo de gerenciamento de tarefas e projetos</p>
+        </div>
+
+        <div Class="projetos-box">
+            <a href="https://github.com/Joaquimuriel/Academia" class="linkImage"><img
+                    src="photos/formulario-para-academia.png" alt="Foto meramente ilustrativa do projeto"
+                    class="projetos-imagem"></a>
+            <p class="projetos-text">Sistema para academia em C#</p>
+        </div>
+
+    </section>
+
+    <section Class="contato" id="contato">
+        <div Class="contato-box">
+            <h2 Class="contato-titulo">Entre em contato</h2>
+            <form action="submit" class="contato-form" onsubmit="enviarWhats(event)">
+                <input type="text" placeholder="Seu nome" class="form-nome" id="nome">
+                <textarea placeholder="Digite sua mensagem" class="form-mensagem" id="mensagem"></textarea>
+                <button type="submit" class="form-botao">Entrar em contato no whatsapp</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault();
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5543996168997';
+
+            const texto = 'Olá, meu nome é ' + nome + '. ' + mensagem;
+            const msgFormatada = encodeURIComponent(texto);
+
+            // const url = 'https://wa.me/${telefone}/?t=${msgFormatada}';
+            // const url = https://wa.me/554399616997?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20seu%20servi%C3%A7o!
+            const url = 'https://wa.me/' + telefone + '?text=' + msgFormatada;
+            console.log("URL Gerada:", url);
+
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+
+</html>

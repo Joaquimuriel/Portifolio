@@ -378,7 +378,7 @@ body {
     }
 
     .projetos {
-        flex-direction: column; /* Alinha os cards um embaixo do outro no celular */
+        flex-direction: column;
         align-items: center;
         gap: 2.5em;
         margin: 4em auto;
